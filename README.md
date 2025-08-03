@@ -8,10 +8,26 @@
 
 > This web application provides real-time weather information based on the user's current location. By leveraging the browser’s geolocation API, it automatically detects the user's latitude and longitude to fetch accurate weather data using the OpenWeather API. Built with React for a dynamic user interface, styled with Tailwind CSS for a clean and responsive design, and using Axios for efficient API requests, the app displays weather details in metric units. Key information includes temperature, feels-like temperature, maximum and minimum temperatures, humidity, and wind speed — all presented in an easy-to-understand format.
 
-## Install
+## Usage
 
+Clone the repository
+```sh
+git clone https://www.github.com/puskarpy/myweather.git
+``` 
+
+Navigate to the project directory
+```sh
+cd myweather
+``` 
+
+Install dependencies
 ```sh
 npm install
+```
+
+Start the development server
+```sh
+npm run dev
 ```
 
 ## Author
