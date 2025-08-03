@@ -12,7 +12,7 @@
 
 Clone the repository
 ```sh
-git clone https://www.github.com/puskarpy/myweather.git
+git clone https://www.github.com/puskarpy/myweather
 ``` 
 
 Navigate to the project directory
