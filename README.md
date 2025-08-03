@@ -1,12 +1,30 @@
-# React + Vite
+<h1 align="center">Welcome to MyWeather 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://twitter.com/puskarpy" target="_blank">
+    <img alt="Twitter: puskarpy" src="https://img.shields.io/twitter/follow/puskarpy.svg?style=social" />
+  </a>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> This web application provides real-time weather information based on the user's current location. By leveraging the browser’s geolocation API, it automatically detects the user's latitude and longitude to fetch accurate weather data using the OpenWeather API. Built with React for a dynamic user interface, styled with Tailwind CSS for a clean and responsive design, and using Axios for efficient API requests, the app displays weather details in metric units. Key information includes temperature, feels-like temperature, maximum and minimum temperatures, humidity, and wind speed — all presented in an easy-to-understand format.
 
-Currently, two official plugins are available:
+## Install
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```sh
+npm install
+```
 
-## Expanding the ESLint configuration
+## Author
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+👤 **Pushkar Niraula**
+
+* Website: https://www.pushkarniraula.com.np
+* Twitter: [@puskarpy](https://twitter.com/puskarpy)
+* Github: [@puskarpy](https://github.com/puskarpy)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
