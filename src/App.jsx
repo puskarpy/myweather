@@ -56,7 +56,7 @@ const getWeatherIcon = (condition) => {
     <div className="min-h-screen bg-gray-900 text-white">
       <div className='flex flex-col gap-8 sm:gap-12 pt-4 sm:pt-6 px-4 sm:px-0'>
         <h1 className='text-3xl sm:text-4xl font-bold mx-auto text-white'>
-        Weather
+        My Weather
         </h1>
         <div className="max-w-md w-full mx-auto bg-gradient-to-br from-slate-800 via-slate-700 to-slate-600 rounded-3xl p-6 sm:p-8 text-white shadow-2xl transform transition-all duration-300 hover:scale-105 border border-slate-600/50">
           {/* Header */}
@@ -73,13 +73,13 @@ const getWeatherIcon = (condition) => {
           {/* Main Temperature */}
           <div className="mb-8">
             <div className="flex items-baseline">
-              <span className="text-6xl font-thin">{weatherData?.main?.temp}</span>
+              <span className="text-6xl font-thin">{Math.floor(weatherData?.main?.temp)}</span>
               <span className="text-2xl font-light ml-1">°C</span>
             </div>
             <p className="text-lg opacity-90 mt-1">{weatherData?.weather?.[0]?.main}</p>
             <div className="flex items-center gap-4 mt-2 text-sm opacity-80">
-              <span>H: {weatherData?.main?.temp_max}°</span>
-              <span>L: {weatherData?.main?.temp_min}°</span>
+              <span>H: {Math.floor(weatherData?.main?.temp_max)}°C</span>
+              <span>L: {Math.floor(weatherData?.main?.temp_min)}°C</span>
             </div>
           </div>
     
@@ -90,7 +90,7 @@ const getWeatherIcon = (condition) => {
                 <Thermometer className="w-4 h-4 opacity-70" />
                 <span className="text-xs uppercase tracking-wide opacity-70">Feels Like</span>
               </div>
-              <span className="text-xl font-medium">{weatherData?.main?.feels_like}°C</span>
+              <span className="text-xl font-medium">{Math.floor(weatherData?.main?.feels_like)}°C</span>
             </div>
     
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 transition-all duration-200 hover:bg-white/20">
