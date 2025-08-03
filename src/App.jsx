@@ -30,7 +30,12 @@ useEffect(() => {
       },
       (error) => {
         console.log(error);
-      }
+      },
+          {
+      enableHighAccuracy: true,
+      timeout: 10000,          
+      maximumAge: 0            
+    }
     );
   } else {
     console.log("Geolocation is not supported by this browser.");
