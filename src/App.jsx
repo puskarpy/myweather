@@ -39,17 +39,15 @@ useEffect(() => {
   
 }, []);
 
-const getWeatherIcon = (condition) => {
-      switch (condition) {
-        case 'sunny':
-          return <Sun className="w-16 h-16 text-yellow-400" />;
-        case 'partly-cloudy':
-          return <Cloud className="w-16 h-16 text-gray-300" />;
-        case 'rainy':
-          return <CloudRain className="w-16 h-16 text-blue-400" />;
-        default:
-          return <Sun className="w-16 h-16 text-yellow-400" />;
-      }
+const getWeatherIcon = (iconCode) => {
+     if (!iconCode) return <Sun className="w-16 h-16 text-yellow-400" />;
+
+  if (iconCode.startsWith('01')) return <Sun className="w-16 h-16 text-yellow-400" />;
+  if (iconCode.startsWith('02') || iconCode.startsWith('03') || iconCode.startsWith('04')) return <Cloud className="w-16 h-16 text-gray-300" />;
+  if (iconCode.startsWith('09') || iconCode.startsWith('10')) return <CloudRain className="w-16 h-16 text-blue-400" />;
+  // add more mappings as needed
+
+  return <Sun className="w-16 h-16 text-yellow-400" />; // fallback
     };
 
   return (
